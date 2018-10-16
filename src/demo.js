@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import CustomRoutes from './Routes';
 import {Provider} from 'react-redux';
 
 import './App.css';
 
-class App extends Component {
+class Demo extends Component {
   render() {
     return (
       <div className="App">
-      {/* <CustomRoutes/> */}
-      <h1> I am home from app.js </h1>
+      <h1> I am home from Demo.js </h1>
       {/* <Link to="/"> home </Link> */}
 
       </div>
@@ -17,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Demo;
