@@ -1,8 +1,7 @@
-import {combineReducer} from 'redux';
-import Reducer from './reducer';
+import reducer from './reducer';
+import {combineReducers} from 'redux';
 
+export default combineReducers({
+    root: reducer
+});
 
-
-export default combineReducer({
-    rootReducer: Reducer
-})
