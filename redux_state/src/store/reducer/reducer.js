@@ -1,11 +1,17 @@
 
 const INITIAL_STATE = {
-    name:'Sarim'
+    name: 'Sarim'
 };
 
-export default (states = INITIAL_STATE , action) => {
-    switch(action.type){
+export default (state = INITIAL_STATE, action) => {
+    switch (action.type) {
+        case "A":
+        return ({
+            ...state,
+            name:"Maaz"
+        })
         default:
-                return states;
+            return state;
     }
 }
+

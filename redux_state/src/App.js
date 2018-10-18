@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import store from './store/index';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import Component_ from "./Comonent/indexx"
 
 
 class App extends Component {
   render() {
-    // console.log(this.props.name);
+
     return (
       <div className="App">
-      {/* <Provider store={store}>  */}
-        <h1> First Redux  </h1>
 
-      {/* </Provider>  */}
-        
+        <h1> First Redux  </h1>
+        <Component_ />
+
       </div>
     );
   }
