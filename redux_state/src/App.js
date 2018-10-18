@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Provider } from 'react-redux';
-import store from './store/index';
 import { connect } from 'react-redux';
-import Component_ from "./Comonent/indexx"
+import { Provider } from "react-redux";
+import store from "./store/index";
+import Component_ from "./Comonent/indexx";
+import { isLoaderAction } from "./store/action/action.js";
+
 
 
 class App extends Component {
@@ -13,8 +14,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <h1> First Redux  </h1>
-        <Component_ />
+        <Provider store={store} >
+          <Component_ />
+        </Provider>
 
       </div>
     );
