@@ -1,14 +1,15 @@
 
 const INITIAL_STATE = {
-    name: 'Sarim'
+    name: "Sarim"
 };
 
 export default (state = INITIAL_STATE, action) => {
+        // console.log(state.name)
     switch (action.type) {
         case "A":
         return ({
             ...state,
-            name:"Maaz"
+            name:action.payload
         })
         default:
             return state;

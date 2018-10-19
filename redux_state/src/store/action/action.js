@@ -1,10 +1,11 @@
-export const isLoaderAction = (data) => {
+export const isLoaderAction = (updatedUserName) => {
     // console.log("Successful");
 
     return dispatch => {
         dispatch({
             type: "A",
-            payload: data
+            payload: updatedUserName
         })
+        // console.log(updatedUserName , "updatedUserName fromaction")
     }
 }
